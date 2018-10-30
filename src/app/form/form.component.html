@@ -13,9 +13,40 @@
 </div>
 
 <div *ngIf="isPlayer">
-  <app-form-joueur></app-form-joueur>
+  <h2>Vos objectifs</h2>
+<p>Choissisez vos  3 bonbons objectifs</p>
+<mat-list role="list">
+    <mat-list-item role="listitem"><mat-checkbox>Bonbon type 1</mat-checkbox></mat-list-item>
+    <mat-list-item role="listitem"><mat-checkbox>Bonbon type 2</mat-checkbox></mat-list-item>
+    <mat-list-item role="listitem"><mat-checkbox>Bonbon type 3</mat-checkbox></mat-list-item>
+    <mat-list-item role="listitem"><mat-checkbox>Bonbon type 4</mat-checkbox></mat-list-item>
+    <mat-list-item role="listitem"><mat-checkbox>Bonbon type 5</mat-checkbox></mat-list-item>
+    <mat-list-item role="listitem"><mat-checkbox>Bonbon type 6</mat-checkbox></mat-list-item>
+    <mat-list-item role="listitem"><mat-checkbox>Bonbon type 7</mat-checkbox></mat-list-item>
+    <mat-list-item role="listitem"><mat-checkbox>Bonbon type 8</mat-checkbox></mat-list-item>
+    <mat-list-item role="listitem"><mat-checkbox>Bonbon type 9</mat-checkbox></mat-list-item>
+</mat-list>
+
+  <div>
+    <p>Personne à contacter en cas d'urgence: </p>
+    <input type="text">
+  </div>
+
+  <div>
+    <button type="submit"  (click)="route('joueur')"  class="btn btn-primary">Submit</button>
+  </div>
 </div>
 
 <div *ngIf="isPlayer == false">
-    <app-form-maison></app-form-maison>
+  <h2>Vos coordonées</h2>
+  <p>Indiquez votre Adresse</p>
+  <div>
+      <form>
+        <input type="text" #adresse id="adresse" placeholder="Adresse" name="adresse" ngModel/>
+        <button type="submit" [disabled]="f.invalid" class="icon">Valider adresse</button>
+      </form>
+    </div>
+  
+  
+    <button class="btn btn-primary" (click)="route('maison')" type="submit"> Scanner vos Bonbons </button>
 </div>

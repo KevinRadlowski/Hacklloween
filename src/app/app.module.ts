@@ -5,8 +5,6 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { JoueurComponent } from './joueur/joueur.component';
 import { MaisonComponent } from './maison/maison.component';
-import { FormJoueurComponent } from './form-joueur/form-joueur.component';
-import { FormMaisonComponent } from './form-maison/form-maison.component';
 import { MapComponent } from './map/map.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PanierComponent } from './panier/panier.component';
@@ -23,10 +21,10 @@ import { MatListModule } from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
-  {path: '**', redirectTo: 'form', pathMatch: 'full'},
+  {path: '', redirectTo: 'form', pathMatch: 'full'},
   {path: 'form', component: FormComponent},
-  {path: 'joueur/id:', component: JoueurComponent},
-  {path: 'maison/id:', component: MaisonComponent},
+  {path: 'joueur/:id', component: JoueurComponent},
+  {path: 'maison/:id', component: MaisonComponent},
   ];
 
 
@@ -36,8 +34,6 @@ const appRoutes: Routes = [
     FormComponent,
     JoueurComponent,
     MaisonComponent,
-    FormJoueurComponent,
-    FormMaisonComponent,
     MapComponent,
     NavbarComponent,
     PanierComponent,
@@ -45,8 +41,6 @@ const appRoutes: Routes = [
     QuestionCreationComponent,
     ListeBonbonComponent,
     MapMarkersComponent,
-    FormJoueurComponent,
-    FormMaisonComponent
   ],
   entryComponents: [
     PanierComponent

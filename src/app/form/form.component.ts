@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-
+import { Router, RouterModule } from '@angular/router';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -8,7 +8,8 @@ import { NgForm } from '@angular/forms';
 })
 export class FormComponent implements OnInit {
   isPlayer: boolean = undefined;
-
+  pseudo: string;
+constructor(private router: Router ) {}
   isPlayerFunction(param) {
     if(param == 'Joueur') {
       this.isPlayer = true;
@@ -19,10 +20,22 @@ export class FormComponent implements OnInit {
   }
 
   getPseudo(form: NgForm){
-    form.value['pseudo']
+    this.pseudo = form.value['pseudo'];
   }
 
-  constructor() { }
+  route(usertype) {
+    switch (usertype){
+      case 'joueur':
+      this.router.navigate(['joueur/' + this.pseudo]);
+      break;
+      
+      case 'maison':
+      this.router.navigate(['maison/' + this.pseudo]);
+      break;
+    }
+  }
+
+
 
   ngOnInit() {
   }
