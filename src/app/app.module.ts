@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { JoueurComponent } from './joueur/joueur.component';
@@ -13,6 +13,8 @@ import { PanierComponent } from './panier/panier.component';
 import { QuestionComponent } from './question/question.component';
 import { QuestionCreationComponent } from './question-creation/question-creation.component';
 import { ListeBonbonComponent } from './liste-bonbon/liste-bonbon.component';
+import { AgmCoreModule } from '@agm/core';
+import { MapMarkersComponent } from './map-markers/map-markers.component';
 
 @NgModule({
   declarations: [
@@ -27,10 +29,18 @@ import { ListeBonbonComponent } from './liste-bonbon/liste-bonbon.component';
     PanierComponent,
     QuestionComponent,
     QuestionCreationComponent,
-    ListeBonbonComponent
+    ListeBonbonComponent,
+    MapMarkersComponent
+  ],
+  entryComponents: [
+    PanierComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBNiGHB5tcAsl9ilspi0aqb093Nlvdy5L8'
+    }),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
