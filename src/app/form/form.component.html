@@ -1,7 +1,21 @@
-<p>
-  form works!
-</p>
+<h1> Bonbec Quest </h1>
+<div>
+  <div>
+    <form (ngSubmit)="getPseudo(f)" #f="ngForm">
+      <input type="text" #searchValue id="pseudo" placeholder="Pseudo" name="pseudo" ngModel/>
+      <button type="submit" [disabled]="f.invalid" class="icon">Valider Pseudo</button>
+    </form>
+  </div>
 
-<app-form-joueur></app-form-joueur>
+  <h1><strong> Choisir votre rôle </strong></h1>
+  <button class="btn btn-primary" type="submit" (click)="isPlayerFunction('Joueur')">Joueur</button>
+  <button class="btn btn-primary" type="submit" (click)="isPlayerFunction('Donneur')">Donneur</button>
+</div>
 
-<app-form-maison></app-form-maison>
+<div *ngIf="isPlayer">
+  <app-form-joueur></app-form-joueur>
+</div>
+
+<div *ngIf="isPlayer == false">
+    <app-form-maison></app-form-maison>
+</div>
