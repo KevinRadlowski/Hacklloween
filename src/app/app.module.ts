@@ -14,6 +14,13 @@ import { QuestionComponent } from './question/question.component';
 import { QuestionCreationComponent } from './question-creation/question-creation.component';
 import { ListeBonbonComponent } from './liste-bonbon/liste-bonbon.component';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatListModule } from '@angular/material/list';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +37,12 @@ import { ListeBonbonComponent } from './liste-bonbon/liste-bonbon.component';
     ListeBonbonComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatCheckboxModule,
+    MatListModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
