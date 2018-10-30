@@ -7,7 +7,8 @@ export class BonbonService {
 
   constructor() { }
 
-  export const Bonbons: Bonbons[] = [
+  Bonbons = [
+
   /*Basiques*/
     { nom: 'Fraise tagada', texture: 'mou', gout: 'doux', saveur: 'fruit', theme:'', image: 'https://static.openfoodfacts.org/images/products/310/322/000/9079/front_fr.12.200.jpg' },
     { nom: 'Arlequin', texture: 'dur', gout: 'doux', saveur: '',theme:'', image: 'https://static.openfoodfacts.org/images/products/311/674/001/7332/front_fr.28.200.jpg' },
