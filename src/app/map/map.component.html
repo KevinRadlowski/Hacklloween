@@ -1,12 +1,22 @@
 <div class="container col-md-4 mapwidth">
-<agm-map [latitude]="myLat" [longitude]="myLng">
-  <agm-marker
-    [latitude]="myLat" 
-    [longitude]="myLng">
-  </agm-marker>
-  <div *ngFor="let l of adresses" >
-    <agm-marker [latitude]='l.latitude' [longitude]='l.longitude'>
+  <agm-map [latitude]="myLat" [longitude]="myLng">
+    <agm-marker
+      [latitude]="myLat" 
+      [longitude]="myLng">
     </agm-marker>
-  </div>
-</agm-map>
+    <div *ngFor="let l of adresses" >
+      <agm-marker [latitude]='l.latitude' [longitude]='l.longitude'>
+          <agm-snazzy-info-window  [closeWhenOthersOpen]="true" [showCloseButton]="false">
+              <ng-template>
+                <div class="mapModal">
+                  <h5 class="modalTitle">Question Bonbons </h5>
+                  <p>{{l.intitule}}</p>
+                
+            
+                </div>
+              </ng-template>
+            </agm-snazzy-info-window>
+      </agm-marker>
+    </div>
+  </agm-map>
 </div>
