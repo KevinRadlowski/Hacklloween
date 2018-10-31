@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { AdressService } from './service/adress.service'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,22 +8,11 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   isPlayer = true;
-  myLat: number;
-  myLng: number;
-  constructor() {}
-
+  constructor(private adressService: AdressService) {}
 
   
-
-  displayLocationInfo = (position) => {
-    this.myLng = position.coords.longitude;
-    this.myLat = position.coords.latitude;
-  }
-
   ngonInit() {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(this.displayLocationInfo);
-    }
+
   }
 
 }

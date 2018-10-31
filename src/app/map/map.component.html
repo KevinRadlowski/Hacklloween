@@ -1,7 +1,12 @@
 <div class="container col-md-4 mapwidth">
-<agm-map [latitude]="lat" [longitude]="lng">
-  <agm-marker 
-    [latitude]="lat" 
-    [longitude]="lng"></agm-marker>
+<agm-map [latitude]="myLat" [longitude]="myLng">
+  <agm-marker
+    [latitude]="myLat" 
+    [longitude]="myLng">
+  </agm-marker>
+  <div *ngFor="let l of adresses" >
+    <agm-marker [latitude]='l.latitude' [longitude]='l.longitude'>
+    </agm-marker>
+  </div>
 </agm-map>
 </div>

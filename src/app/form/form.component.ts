@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
+import { AdressService } from '../service/adress.service'
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -9,7 +10,9 @@ import { Router, RouterModule } from '@angular/router';
 export class FormComponent implements OnInit {
   isPlayer: boolean = undefined;
   pseudo: string;
-constructor(private router: Router ) {}
+  myLat:number;
+  myLng:number;
+constructor(private router: Router ,private adressService: AdressService) {}
   isPlayerFunction(param) {
     if(param == 'Joueur') {
       this.isPlayer = true;
@@ -35,9 +38,16 @@ constructor(private router: Router ) {}
     }
   }
 
-
+  displayLocationInfo = (position) => {
+    this.myLng = position.coords.longitude;
+    this.myLat = position.coords.latitude;
+    this.adressService.getAdress(this.myLng, this.myLat)
+  }
 
   ngOnInit() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(this.displayLocationInfo);
+    }
   }
 
 }
