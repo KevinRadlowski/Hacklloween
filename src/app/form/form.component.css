@@ -1,6 +1,13 @@
-@font-face {
-    font-family: 'halloween';
-    src: url('src/assets/images/halloween/HallowenInline.otf');
+.apptitle h1 {
+    margin-top: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(255, 72, 0, 0.705);
+    border-radius: 12px;
+    text-shadow: 3px 3px 4px black;
+    color:white;
+    font-family: Ginger;
+    font-size: 3.5em;
 }
 
 h1{
@@ -8,48 +15,52 @@ h1{
     color:white;
 }
 
-body {
-    background-image: url("src/app/img_css/fondecranaccueil.jpg");
-    height: 90%;
-    color:white;
-}
+
 
 .zonepseudo{
     position: absolute;
-    margin-top: 20vmin;
     margin-left: 10vmin;
+    margin-top: -10vmin;
 }
 
 .zonepseudo button {
+    font-family: NFI;
     position: absolute;
-    margin-top: 25vmin;
-    margin-left: 33vmin;
+    margin-top: 30vmin;
+    margin-left: 30vmin;
     background: orangered;
-    color:white;
+    border: 1px solid black;
+    font-size: 1.5em;
+    border-radius: 10px;
 }
 
 .zonepseudo input {
+    font-family: NFI;
+    font-size: 1.3em;
     position: absolute;
     margin-top: 15vmin;
-    margin-left: 20vmin;
-    color:white;
+    margin-left: 17vmin;
 }
 
 
 .buttonchoice h1{
-    font-family: "halloween";
+    font-family: "Ginger";
+    font-size: 4em;
     position: absolute;
-    margin-top: 60vmin;
-    margin-left: 37vmin;
+    margin-top: 35vmin;
+    margin-left: 35vmin;
     color:white;
 }
 
 .boutonchoix{
 
-    margin-top: 74vmin;
-    margin-left: 22vmin;
+    font-family: NFI;
+    margin-top: 58vmin;
+    margin-left: 20vmin;
     background: orangered;
-    color:white;
+    border:1px solid black;
+    border-radius: 8px;
+    font-size: 1.5em;
 }
 
 .choiceplayer1{
@@ -57,28 +68,42 @@ body {
     margin-left: 19vmin;
     margin-top:7vmin;
     color:white;
+
+    background-color: rgba(255, 72, 0, 0.705);
+    border-radius: 12px
 }
 
 .choiceplayer1 h2{
-    font-family: "halloween";
+    font-family: "Ginger";
 }
 .choiceplayer1 .puce {
     margin-top: -5vmin;
     color:white;
 }
 
+mat-checkbox {
+    color: white;
+}
+
 .choiceplayer1 button{
+    font-family: NFI;
+    font-size: 1.5em;
     position:absolute;
-    margin-top:22vmin;
+    margin-top: 5vmin;
     margin-left:40vmin;
     background: orangered;
-    color:white;
+    border-radius: 8px;
+    border: 1px solid black;
+    
 }
 
 .urgence {
     position: absolute;
-    margin-right: 10vmin;
+    margin-top: 3vmin;
+    margin-left: -10vmin;
+    margin-right: 20vmin;
     color:white;
+    
 }
 
 .choiceplayer2{
@@ -95,7 +120,7 @@ body {
 }
 
 .choiceplayer2 h2{
-    font-family: "halloween";
+    font-family: "Ginger";
     color:white;
 }
 

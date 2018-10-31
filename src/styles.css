@@ -1,3 +1,27 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
+@font-face {
+    font-family: 'halloween';
+    src: url('src/assets/images/halloween/HallowenInline.otf');
+}
+@font-face {
+    font-family: 'NFI';
+    src: url('src/assets/polices/csnpwdtNFI.ttf');
+}
+
+@font-face {
+    font-family: 'Ginger';
+    src: url('src/assets/polices/GingerbreadHouse.ttf');
+}
+
+@font-face {
+    font-family: 'Swamp';
+    src: url('src/assets/polices/itlivesintheswamp.ttf');
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+    background-image: url("src/assets/images/top-halloween-iphone-cell-phone_4.jpg");
+    height: 90%;
+    color:white;
+}

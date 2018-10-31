@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'halloween';
-    src: url('src/assets/images/halloween/HallowenInline.otf');
-}
+
 
 body {
     background-image: url("src/app/img_css/fondecranaccueil.jpg");

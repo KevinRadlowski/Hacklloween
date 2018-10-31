@@ -47,7 +47,7 @@ closeResult: string;
     let random:number;
     let i= 0;
     while ( i < 3 ){
-      random = Math.floor(Math.random() * Math.floor(34));
+      random = Math.floor(Math.random() * Math.floor(10));
       if( random != notrandom){
         notrandom = random;
         this.bonbonDispo.push(this.bonbonservice.Bonbons[random]);

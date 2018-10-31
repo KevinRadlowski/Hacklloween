@@ -1,5 +1,9 @@
 <body>
   <div>
+    <div class="apptitle d-flex justify-content-center">
+      <h1>CANDY QUEST</h1>
+    </div>
+
     <div>
       <form (ngSubmit)="getPseudo(f)" #f="ngForm" class="zonepseudo">
         <input type="text" #searchValue id="pseudo" placeholder="Pseudo" name="pseudo" ngModel />
@@ -32,7 +36,7 @@
 
       <div class="urgence">
         <h5>En cas d'urgence, contacez : </h5>
-        <input type="text">
+        <input type="text" placeholder="Nom et Téléphone">
       </div>
 
       <div>
@@ -41,10 +45,10 @@
     </div>
 
     <div *ngIf="isPlayer == false" class="choiceplayer2">
-      <h2>Mes coordonées</h2>
+      <h2>Mes coordonnees</h2>
       <div>
         <form>
-          <input type="text" #adresse id="adresse" placeholder="Adresse" name="adresse" ngModel />
+          <input type="text" #adresse id="adresse" placeholder="Entrez votre adresse" name="adresse" ngModel />
         </form>
       </div>
 
