@@ -1,52 +1,55 @@
-<h1> Bonbec Quest </h1>
-<div>
+<body>
   <div>
-    <form (ngSubmit)="getPseudo(f)" #f="ngForm">
-      <input type="text" #searchValue id="pseudo" placeholder="Pseudo" name="pseudo" ngModel/>
-      <button type="submit" [disabled]="f.invalid" class="icon">Valider Pseudo</button>
-    </form>
-  </div>
-
-  <h1><strong> Choisir votre rôle </strong></h1>
-  <button class="btn btn-primary" type="submit" (click)="isPlayerFunction('Joueur')">Joueur</button>
-  <button class="btn btn-primary" type="submit" (click)="isPlayerFunction('Donneur')">Donneur</button>
-</div>
-
-<div *ngIf="isPlayer">
-  <h2>Vos objectifs</h2>
-<p>Choissisez vos  3 bonbons objectifs</p>
-<mat-list role="list">
-    <mat-list-item role="listitem"><mat-checkbox>Bonbon type 1</mat-checkbox></mat-list-item>
-    <mat-list-item role="listitem"><mat-checkbox>Bonbon type 2</mat-checkbox></mat-list-item>
-    <mat-list-item role="listitem"><mat-checkbox>Bonbon type 3</mat-checkbox></mat-list-item>
-    <mat-list-item role="listitem"><mat-checkbox>Bonbon type 4</mat-checkbox></mat-list-item>
-    <mat-list-item role="listitem"><mat-checkbox>Bonbon type 5</mat-checkbox></mat-list-item>
-    <mat-list-item role="listitem"><mat-checkbox>Bonbon type 6</mat-checkbox></mat-list-item>
-    <mat-list-item role="listitem"><mat-checkbox>Bonbon type 7</mat-checkbox></mat-list-item>
-    <mat-list-item role="listitem"><mat-checkbox>Bonbon type 8</mat-checkbox></mat-list-item>
-    <mat-list-item role="listitem"><mat-checkbox>Bonbon type 9</mat-checkbox></mat-list-item>
-</mat-list>
-
-  <div>
-    <p>Personne à contacter en cas d'urgence: </p>
-    <input type="text">
-  </div>
-
-  <div>
-    <button type="submit"  (click)="route('joueur')"  class="btn btn-primary">Submit</button>
-  </div>
-</div>
-
-<div *ngIf="isPlayer == false">
-  <h2>Vos coordonées</h2>
-  <p>Indiquez votre Adresse</p>
-  <div>
-      <form>
-        <input type="text" #adresse id="adresse" placeholder="Adresse" name="adresse" ngModel/>
-        <button type="submit" [disabled]="f.invalid" class="icon">Valider adresse</button>
+    <div>
+      <form (ngSubmit)="getPseudo(f)" #f="ngForm" class="zonepseudo">
+        <input type="text" #searchValue id="pseudo" placeholder="Pseudo" name="pseudo" ngModel />
+        <button type="submit" [disabled]="f.invalid" class="icon">Valider</button>
       </form>
     </div>
-  
-  
-    <button class="btn btn-primary" (click)="route('maison')" type="submit"> Scanner vos Bonbons </button>
-</div>
+
+    <div class="buttonchoice">
+      <h1>Je suis :</h1>
+      <button class="btn btn-primary" class="boutonchoix" type="submit" (click)="isPlayerFunction('Joueur')">Joueur</button>
+      <button class="btn btn-primary" class="boutonchoix" type="submit" (click)="isPlayerFunction('Donneur')">Donneur</button>
+    </div>
+
+
+    <div *ngIf="isPlayer" class="choiceplayer1">
+      <h2>Mon challenge :</h2>
+      <mat-list role="list">
+        <mat-list-item role="listitem" class="puce">
+          <mat-checkbox>Challenge saveurs</mat-checkbox>
+        </mat-list-item>
+        <mat-list-item role="listitem" class="puce">
+          <mat-checkbox>Challenge thème Halloween</mat-checkbox>
+        </mat-list-item>
+        <mat-list-item role="listitem" class="puce">
+          <mat-checkbox>Challenge thème Harry Potter</mat-checkbox>
+        </mat-list-item>
+
+
+      </mat-list>
+
+      <div class="urgence">
+        <h5>En cas d'urgence, contacez : </h5>
+        <input type="text">
+      </div>
+
+      <div>
+        <button type="submit" (click)="route('joueur')" class="btn btn-primary" class="submit">Commencer le jeu</button>
+      </div>
+    </div>
+
+    <div *ngIf="isPlayer == false" class="choiceplayer2">
+      <h2>Mes coordonées</h2>
+      <div>
+        <form>
+          <input type="text" #adresse id="adresse" placeholder="Adresse" name="adresse" ngModel />
+        </form>
+      </div>
+
+
+      <button class="btn btn-primary" (click)="route('maison')" type="submit" class="scann"> Scanner mes Bonbons </button>
+    </div>
+  </div>  
+</body>

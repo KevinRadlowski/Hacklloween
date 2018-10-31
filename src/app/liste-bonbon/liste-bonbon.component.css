@@ -1,0 +1,31 @@
+body {
+    background-image: url("src/app/img_css/fondecranaccueil.jpg");
+    height: 90%;
+}
+
+.inventaire {
+    position: absolute;
+    margin-top: 35vmin;
+    margin-left:25vmin;
+}
+
+.listeitem {
+    
+    border: solid white;
+    border-width:1px;
+    border-radius: 20px;
+    margin-top:5vmin;
+    padding-right:45vmin;
+    padding-left:5vmin;
+}
+
+body .listebonbon {
+    margin-top: 60vmin;
+    position: absolute;
+}
+
+.listebonbon button {
+    position: absolute;
+    margin-left: 80vmin;
+    margin-top:-10vmin;
+}
