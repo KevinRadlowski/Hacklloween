@@ -3,7 +3,11 @@
 body {
     background-image: url("src/assets/images/top-halloween-iphone-cell-phone_4.jpg");
     height: 90%;
-    color:white;
+}
+
+.modal-body {
+    color: black;
+    background-color: orange;
 }
 
 .inventaire {
