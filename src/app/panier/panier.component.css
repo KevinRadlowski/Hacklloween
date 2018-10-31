@@ -2,17 +2,46 @@
     font-family: HallowenInline;
     src: url(../../assets/polices/HallowenInline.ttf);
 }
+.panierbody {
+    background-image: url("src/assets/images/top-halloween-iphone-cell-phone_4.jpg");
+    
+}
+.modal-header {
+    Background-image: url(http://www.funny.kim/wp-content/uploads/2016/10/Halloween-Banner-6.jpg);
+    background-size: cover;
+}
 
 .modal-title {
-    font-family: HallowenInline;
+    font-family: Ginger;
+    color: black;
+}
+.close {
+    background-color: orangered;
+}
+.btn {
+    background-color: orangered;
+    font-family: Ginger;
+    text-shadow: 1px 1px 2px white;
+    font-size: 2em;
+    border: 1px solid black;
+    box-shadow: 1px 1px 2px black;
 }
 
-.modal-body {
-    position: relative;
-    width: auto;
-    overflow: hidden;
+.dupli {
+    margin: 5%;
+    
+}
+.bonbonlist {
+    background-color: rgba(255, 72, 0, 0.705);
+    border-radius: 8px;
+    padding: 5px;
 }
 
-img {
+.bonbonlist img {
     width:40px;
+    height: 40px;
+    
+}
+.modal-title img {
+    max-width:40px;
 }

@@ -1,26 +1,40 @@
 
 
 body {
-    background-image: url("src/app/img_css/fondecranaccueil.jpg");
+    background-image: url("src/assets/images/top-halloween-iphone-cell-phone_4.jpg");
     height: 90%;
     color:white;
 }
 
 .inventaire {
-    font-family: "halloween";
+    background-color: rgba(255, 72, 0, 0.705);
+    border-radius: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Ginger;
+    font-size: 4em;
     position: absolute;
     margin-top: 35vmin;
     margin-left:25vmin;
+    color: white;
+    text-shadow: 3px 3px 4px black;
 }
 
 .listeitem {
-    font-size: 3vmin;
-    border: solid white;
+    background-color: rgba(255, 72, 0, 0.705);
+    border: solid black;
     border-width:1px;
     border-radius: 20px;
     margin-top:5vmin;
-    padding-right:45vmin;
+    padding-right:50vmin;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left:5vmin;
+}
+
+.title {
+    font-size: 1.4em;
+    font-family: Halloween;
 }
 
 body .listebonbon {
