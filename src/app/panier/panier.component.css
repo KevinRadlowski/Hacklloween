@@ -1,0 +1,18 @@
+@font-face {
+    font-family: HallowenInline;
+    src: url(../../assets/polices/HallowenInline.ttf);
+}
+
+.modal-title {
+    font-family: HallowenInline;
+}
+
+.modal-body {
+    position: relative;
+    width: auto;
+    overflow: hidden;
+}
+
+img {
+    width:40px;
+}

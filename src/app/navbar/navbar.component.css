@@ -1,3 +1,12 @@
+@font-face {
+    font-family: HallowenInline;
+    src: url(../../assets/polices/HallowenInline.ttf);
+}
+
 img {
     width: 40px;
+}
+
+.navbar-brand {
+    font-family: HallowenInline;
 }
