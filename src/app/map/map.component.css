@@ -1,8 +1,28 @@
-
 /*en grand*/
 agm-map {
     height: 600px;
     width: 100%;
     z-index: 0;
   
-  }
+}
+
+.mapModal {
+  display: block;
+  background-color: rgba(255, 145, 2, 0.75);
+  font-weight: 500;
+  min-width: 60vw;
+  padding: 15px 25px;
+  max-width: 325px;
+  max-height: 325px;
+  position: absolute;
+  transform: translateX(-50%);
+  width: calc(100% - 60px);
+  top: 5px;
+  border:2px solid black;
+  border-radius: 10px;
+  font-size: 1.2em;
+  box-shadow: 4px 4px 4px;}
+
+.modalTitle{
+  text-align: center;
+}

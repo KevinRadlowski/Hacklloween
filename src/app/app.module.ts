@@ -8,8 +8,6 @@ import { MaisonComponent } from './maison/maison.component';
 import { MapComponent } from './map/map.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PanierComponent } from './panier/panier.component';
-import { QuestionComponent } from './question/question.component';
-import { QuestionCreationComponent } from './question-creation/question-creation.component';
 import { ListeBonbonComponent } from './liste-bonbon/liste-bonbon.component';
 import { AgmCoreModule } from '@agm/core';
 import { MapMarkersComponent } from './map-markers/map-markers.component';
@@ -20,6 +18,7 @@ import { MatListModule } from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
+import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: 'form', pathMatch: 'full'},
@@ -38,8 +37,6 @@ const appRoutes: Routes = [
     MapComponent,
     NavbarComponent,
     PanierComponent,
-    QuestionComponent,
-    QuestionCreationComponent,
     ListeBonbonComponent,
     MapMarkersComponent,
   ],
@@ -53,6 +50,7 @@ const appRoutes: Routes = [
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBNiGHB5tcAsl9ilspi0aqb093Nlvdy5L8'
     }),
+    AgmSnazzyInfoWindowModule,
     NgbModule,
     FormsModule,
     ReactiveFormsModule,

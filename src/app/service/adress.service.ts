@@ -6,16 +6,16 @@ import { HttpClient } from '@angular/common/http';
 export class AdressService implements OnInit {
 /*LISTE ADRESSE DURE*/
 Adresses = [
-  {nom: 'adresse 1', latitude: 45.745993, longitude: 4.825433, adresse: '52 Cours Suchet'},
-  {nom: 'adresse 2', latitude: 45.745319, longitude: 4.827207, adresse: '13 Quai Perrache'},
-  {nom: 'adresse 3', latitude: 45.745814, longitude: 4.825983, adresse: '58 Cours Suchet'},
-  {nom: 'adresse 4', latitude: 45.745653, longitude: 4.824993, adresse: '20-28 Rue Smith,'},
-  {nom: 'adresse 5', latitude: 45.74560, longitude: 4.823963, adresse: '7-1 Rue Marc-Antoine Petit'},
-  {nom: 'adresse 6', latitude: 45.745223, longitude: 4.826085, adresse: '16-28 Rue Delandine'},
-  {nom: 'adresse 7', latitude: 45.744008, longitude: 4.825087, adresse: '30-44 Rue Delandine'},
-  {nom: 'adresse 8', latitude: 45.743920, longitude: 4.823522, adresse: '51-41 Rue Smith'},
-  {nom: 'adresse 9', latitude: 45.748186, longitude: 4.827603, adresse: '12 Rue du Bélier,'},
-  {nom: 'adresse 10', latitude: 45.747742, longitude: 4.823745, adresse: ' 15-7 Rue Gilibert'},
+  {nom: 'adresse 1', latitude: 45.745993, longitude: 4.825433, adresse: '52 Cours Suchet',intitule: "De quelle film est tirée la chanson 'Bienvenu à Holloween ?'"},
+  {nom: 'adresse 2', latitude: 45.745319, longitude: 4.827207, adresse: '13 Quai Perrache',intitule: "Quelle est l'origine de la fête d'Halloween ?"},
+  {nom: 'adresse 3', latitude: 45.745814, longitude: 4.825983, adresse: '58 Cours Suchet',intitule: "Comment dit-on 'citrouille' en anglais ?"},
+  {nom: 'adresse 4', latitude: 45.745653, longitude: 4.824993, adresse: '20-28 Rue Smith',intitule: "En Grande-Bretagne, comment appelait-on autrefois la fête d'Halloween ?"},
+  {nom: 'adresse 5', latitude: 45.74560, longitude: 4.823963, adresse: '7-1 Rue Marc-Antoine Petit',intitule: "Dans les années 1920, comment ce nommait les lanternes de la fête d'Halloween ?"},
+  {nom: 'adresse 6', latitude: 45.745223, longitude: 4.826085, adresse: '16-28 Rue Delandine',intitule: "Quelles sont les deux couleures indisociable d'Halloween ?"},
+  {nom: 'adresse 7', latitude: 45.744008, longitude: 4.825087, adresse: '30-44 Rue Delandine',intitule: "Quel est de coutume de chasser le soir d'Halloween ?"},
+  {nom: 'adresse 8', latitude: 45.743920, longitude: 4.823522, adresse: '51-41 Rue Smith',intitule: "Quel nom porte le gâteau commercialisé pour la fête d'Halloween ?"},
+  {nom: 'adresse 9', latitude: 45.748186, longitude: 4.827603, adresse: '12 Rue du Bélier',intitule: "Selon la croyance, les personnes nées le jour d'Halloween ont un talent en particulier, lequel ?"},
+  {nom: 'adresse 10', latitude: 45.747742, longitude: 4.823745, adresse: ' 15-7 Rue Gilibert',intitule: "Selon la croyance, que signifie voir une araignée le jour d'Halloween ?"},
 ]
 
 
