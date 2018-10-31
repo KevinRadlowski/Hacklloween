@@ -5,11 +5,13 @@
 
 h1{
     text-align: center;
+    color:white;
 }
 
 body {
     background-image: url("src/app/img_css/fondecranaccueil.jpg");
     height: 90%;
+    color:white;
 }
 
 .zonepseudo{
@@ -23,21 +25,23 @@ body {
     margin-top: 25vmin;
     margin-left: 33vmin;
     background: orangered;
+    color:white;
 }
 
 .zonepseudo input {
     position: absolute;
     margin-top: 15vmin;
     margin-left: 20vmin;
+    color:white;
 }
 
 
 .buttonchoice h1{
     font-family: "halloween";
-    text-shadow: #FFF473 0 0 0.2em;
     position: absolute;
     margin-top: 60vmin;
     margin-left: 37vmin;
+    color:white;
 }
 
 .boutonchoix{
@@ -45,20 +49,22 @@ body {
     margin-top: 74vmin;
     margin-left: 22vmin;
     background: orangered;
+    color:white;
 }
 
 .choiceplayer1{
     position: absolute;
     margin-left: 19vmin;
     margin-top:7vmin;
+    color:white;
 }
 
 .choiceplayer1 h2{
     font-family: "halloween";
-    text-shadow: #FFF473 0 0 0.2em;
 }
 .choiceplayer1 .puce {
     margin-top: -5vmin;
+    color:white;
 }
 
 .choiceplayer1 button{
@@ -66,11 +72,13 @@ body {
     margin-top:22vmin;
     margin-left:40vmin;
     background: orangered;
+    color:white;
 }
 
 .urgence {
     position: absolute;
     margin-right: 10vmin;
+    color:white;
 }
 
 .choiceplayer2{
@@ -83,13 +91,14 @@ body {
     position: absolute;
     margin-top:9vmin;
     background: orange;   
+    color:white;
 }
 
 .choiceplayer2 h2{
     font-family: "halloween";
-    text-shadow: #FFF473 0 0 0.2em;
+    color:white;
 }
 
 .choiceplayer2 h4{
-    color: black;
+    color:white;
 }

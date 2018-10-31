@@ -3,7 +3,7 @@
   <h1 class="inventaire">Inventaire :</h1>
   <div class="listebonbon">
     <div *ngFor="let l of bonbonDispo" class="listeitem">
-      <h1 class="title">{{l.nom}}</h1>
+      <h3 class="title">{{l.nom}}</h3>
       <button mat-mini-fab (click)="remove(l.nom)" color="warn">X</button>
     </div>
   </div>

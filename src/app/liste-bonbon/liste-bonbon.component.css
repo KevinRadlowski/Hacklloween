@@ -1,16 +1,23 @@
+@font-face {
+    font-family: 'halloween';
+    src: url('src/assets/images/halloween/HallowenInline.otf');
+}
+
 body {
     background-image: url("src/app/img_css/fondecranaccueil.jpg");
     height: 90%;
+    color:white;
 }
 
 .inventaire {
+    font-family: "halloween";
     position: absolute;
     margin-top: 35vmin;
     margin-left:25vmin;
 }
 
 .listeitem {
-    
+    font-size: 3vmin;
     border: solid white;
     border-width:1px;
     border-radius: 20px;
@@ -27,5 +34,6 @@ body .listebonbon {
 .listebonbon button {
     position: absolute;
     margin-left: 80vmin;
-    margin-top:-10vmin;
+    margin-top:-6vmin;
+    color:white;
 }

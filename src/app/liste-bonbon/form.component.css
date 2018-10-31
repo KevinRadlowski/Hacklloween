@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'halloween';
+    src: url('src/assets/images/halloween/HallowenInline.otf');
+}
+
 h1{
     text-align: center;
 }
